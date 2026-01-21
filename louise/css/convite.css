@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atma:wght@300;400;500;600;700&display=swap');
 
 
 *{
@@ -9,7 +10,7 @@
 body{
     min-height: 100vh;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.621);
+    background-color: rgba(21, 57, 1, 0.621);
     
     position: relative;
 }
@@ -17,10 +18,11 @@ body{
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(to top, green,white,rgb(0, 140, 255));
+    background-image: linear-gradient(to top, green,rgb(251, 106, 200),rgba(3, 245, 245, 0.558));
     position: relative;
     display: block;
     overflow: hidden;
+    display: none;
     
 
     
@@ -30,7 +32,7 @@ body{
     position: relative;
     width: 100%;
     height: 100vh;
-    background-image: linear-gradient(to top, green,white,rgb(0, 140, 255));
+    background-image: linear-gradient(to top, green,rgb(251, 106, 200),rgba(3, 245, 245, 0.558));
     position: relative;
     display: block;
     overflow: hidden;
@@ -77,10 +79,10 @@ body{
 .convite {
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-70%);
+    transform: translate(-50%,-60%);
     position: absolute;
    width:350px;
-   height: 250px;
+   height: 200px;
     background-image: url('../img/envelope.png');
     background-position: top center;
     background-repeat: no-repeat;
@@ -102,10 +104,10 @@ body{
 }
 
 .corpo{
-    background-image: linear-gradient(to top, green,white,rgb(0, 140, 255));
+    background-image: linear-gradient(to top, green,rgb(251, 106, 200),rgba(3, 245, 245, 0.558));
     height: 90vh;
     position: relative;
-    display: none;
+    display: block;
     overflow: hidden;
 
 
@@ -141,18 +143,26 @@ body{
   }
 }
 .informacoes{
-    display: flex;
-    position: relative;
-    flex-direction: column;
+    
+    position: absolute;
+    
+    
   
-    width: 320px;
+    width: 360px;
     height: 300px;
+    top: 60px;
     left: 50%;
     transform: translate(-50%);
+    background-size: 100% 100%;
+   
 }
 .nome{
     color: white;
-    font-family: "Tangerine", cursive;
+    font-family: "Atma", system-ui;
+    width: 100%;
+    text-align: center;
+    color: rgb(255, 0, 149);
+    font-weight: 700;
     position: absolute;
     font-size: 2.2em;
     transform: translate(-50%);
@@ -161,6 +171,8 @@ body{
     z-index: 9;
     animation: subirGirar 1.5s ease-out forwards;
     text-shadow: 1px 1px 1px black;
+    
+    
 }
 .idade{
     position: absolute;
@@ -168,34 +180,38 @@ body{
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-    width: 250px;
-    height: 60px;
+    width: 300px;
+    height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
-    font-size: 1.5em;
+    font-size: 2em;
     top: 90px;
     left: 50%;
     transform: translate(-50%);
     animation: subirGirar 1.5s ease-out forwards;
 
     z-index: 9;
+
+    
 }
 .texto{
-    font-family: "Tangerine", cursive;
-    font-size: 2em;
+    
+    font-size: 1.5em;
     text-align: center;
     position: absolute;
     top: 160px;
     animation: subirGirar2 1.5s ease-out forwards;
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 1px black;
+    
 
 }
 .dia{
     position: absolute;
-    font-size: 1.1em;
+    font-family: "Tangerine", cursive;
+    font-size: 2em;
     text-align: center;
     border-bottom: dashed 1px black;
     left: 50%;
@@ -203,26 +219,22 @@ body{
     top: 230px;
     animation: subirGirar 1.5s ease-out forwards;
     color: rgb(255, 255, 255);
-    text-shadow: 1px 1px  black,
-    1px -1px black,
-    -1px 1px black,
-    -1px 1px black;
+    text-shadow: 1px 1px  black;
+    
 }
 .flor-top{
     width: 120px;
-    top: -20px;
+    top: -50px;
     transform: rotate(20deg);
+    
 }
-.flor-left{
-    width: 150px;
-    bottom: -20px;
-    left: -20px;
-}
+
 .flor-right{
     width: 150px;
-    top: -7px;
+    top: -25px;
     right: -20px;
     transform: rotate(20deg);
+    
     
 }
 .presenca{
@@ -231,6 +243,7 @@ body{
     left: 70px;
      animation: pulsar 2s linear infinite;
      z-index: 99;
+     
 }
 .localizacao{
     width: 70px;
