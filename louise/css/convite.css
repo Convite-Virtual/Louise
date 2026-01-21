@@ -22,7 +22,7 @@ body{
     position: relative;
     display: block;
     overflow: hidden;
-    display: none;
+    
     
 
     
@@ -107,7 +107,7 @@ body{
     background-image: linear-gradient(to top, green,rgb(251, 106, 200),rgba(3, 245, 245, 0.558));
     height: 90vh;
     position: relative;
-    display: block;
+    display: none;
     overflow: hidden;
 
 
@@ -164,7 +164,7 @@ body{
     color: rgb(255, 0, 149);
     font-weight: 700;
     position: absolute;
-    font-size: 2.2em;
+    font-size: 2.5em;
     transform: translate(-50%);
     left: 50%;
     top: 50px;
