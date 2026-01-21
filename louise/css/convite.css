@@ -76,6 +76,9 @@ body{
     transform: translate(-50%);
     border-radius: 10px;
 }
+.pink{
+    color: rgb(255, 0, 136);
+}
 .convite {
     top: 50%;
     left: 50%;
